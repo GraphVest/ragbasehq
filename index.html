@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ragbase — Reliable, Citation-Backed Answers from Your Firm's Documents</title>
+  <meta name="description" content="Ragbase connects to your case files, policies, and templates — then surfaces precise answers with source references, so your team spends less time searching and more time advising." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body id="top">
+
+  <!-- ─── Navigation ──────────────────────────────────── -->
+  <nav class="nav" id="navbar">
+    <div class="container nav__inner">
+      <a class="nav__logo" href="#top" aria-label="Ragbase home">
+        <span class="nav__logo-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+        </span>
+        <span>Ragbase</span>
+      </a>
+
+      <!-- checkbox-based mobile toggle — no JS needed -->
+      <input type="checkbox" id="navCheck" class="nav__check" aria-label="Toggle menu" />
+      <label for="navCheck" class="nav__hamburger">
+        <span></span><span></span><span></span>
+      </label>
+
+      <ul class="nav__links" id="navLinks" role="list">
+        <li><a href="#product">Product</a></li>
+        <li><a href="#how-it-works">How it Works</a></li>
+        <li><a href="#use-cases">Use Cases</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a class="btn btn--primary btn--sm" href="#consultation">Schedule a Consultation</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ─── Hero ────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__grid">
+        <!-- Copy -->
+        <div class="hero__copy">
+          <span class="hero__badge">Built for small firms. No setup headaches.</span>
+          <h1 class="hero__title">
+            Reliable, citation&#8209;backed answers from<br /><em>your firm's documents</em>
+          </h1>
+          <p class="hero__sub">
+            Ragbase connects to your case files, policies, and templates — then surfaces precise answers with source references, so your team spends less time searching and more time advising.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#consultation">Schedule a Consultation</a>
+            <a class="btn btn--outline" href="#how-it-works">See How It Works</a>
+          </div>
+        </div>
+
+        <!-- Demo Card -->
+        <div class="demo-card">
+          <div class="demo-card__bar">
+            <span class="demo-card__dot demo-card__dot--r"></span>
+            <span class="demo-card__dot demo-card__dot--y"></span>
+            <span class="demo-card__dot demo-card__dot--g"></span>
+          </div>
+          <div class="demo-card__body">
+            <p class="demo-card__q-label">Question</p>
+            <p class="demo-card__question">"What documents are required for an EB-2 NIW petition?"</p>
+
+            <p class="demo-card__a-label">Answer</p>
+            <ul class="demo-card__answer">
+              <li>Form I-140 with the NIW classification</li>
+              <li>Evidence of advanced degree or exceptional ability</li>
+              <li>Personal statement &amp; recommendation letters</li>
+              <li>Detailed plan showing national importance</li>
+            </ul>
+
+            <div class="demo-card__sources">
+              <span class="demo-card__source-label">Sources</span>
+              <span class="demo-card__source-tag">Policy_Manual.pdf</span>
+              <span class="demo-card__source-tag">Client_Intake.docx</span>
+              <span class="demo-card__source-tag">NIW_Checklist.pdf</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social proof -->
+      <div class="social-proof">
+        <p class="social-proof__label">Trusted by modern teams</p>
+        <div class="social-proof__logos">
+          <span>Adler &amp; Wise</span>
+          <span>Meridian Law</span>
+          <span>Northpoint LLP</span>
+          <span>Coastline Legal</span>
+          <span>Verdant Partners</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Product / Benefits ──────────────────────────── -->
+  <section id="product">
+    <div class="container">
+      <p class="section-label">Product</p>
+      <h2 class="section-title">Why firms choose Ragbase</h2>
+      <p class="section-sub">Every answer is grounded in your documents — never fabricated, always verifiable.</p>
+
+      <div class="benefits__grid">
+        <div class="benefit-card reveal">
+          <div class="benefit-card__icon">📑</div>
+          <h3 class="benefit-card__title">Answers with citations</h3>
+          <p class="benefit-card__desc">Every response includes page-level references so you can verify and cite with confidence.</p>
+        </div>
+        <div class="benefit-card reveal reveal-delay-1">
+          <div class="benefit-card__icon">🔒</div>
+          <h3 class="benefit-card__title">Secure document ingestion</h3>
+          <p class="benefit-card__desc">Upload PDFs, Word files, and spreadsheets. Your data stays private and encrypted at rest.</p>
+        </div>
+        <div class="benefit-card reveal reveal-delay-2">
+          <div class="benefit-card__icon">⚡</div>
+          <h3 class="benefit-card__title">Fast client-ready drafts</h3>
+          <p class="benefit-card__desc">Generate first-pass summaries and response letters grounded in actual case materials.</p>
+        </div>
+        <div class="benefit-card reveal reveal-delay-3">
+          <div class="benefit-card__icon">🔁</div>
+          <h3 class="benefit-card__title">Reduce repetitive work</h3>
+          <p class="benefit-card__desc">Stop re-reading the same policies. Ask once, get a reliable answer, and move on.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── How It Works ────────────────────────────────── -->
+  <section id="how-it-works">
+    <div class="container">
+      <p class="section-label text-center">How It Works</p>
+      <h2 class="section-title text-center mx-auto" style="max-width:640px">From document upload to verified answers in minutes — not days.</h2>
+
+      <div class="steps">
+        <div class="steps__grid">
+          <div class="step reveal">
+            <span class="step__number">1</span>
+            <h3 class="step__title">Upload or connect your documents</h3>
+            <p class="step__desc">Drag-and-drop PDFs, DOCX files, or connect a shared drive. Ragbase indexes everything securely.</p>
+          </div>
+          <div class="step reveal reveal-delay-1">
+            <span class="step__number">2</span>
+            <h3 class="step__title">Ask questions &amp; get grounded answers</h3>
+            <p class="step__desc">Type a question in plain language. Ragbase retrieves the most relevant passages and generates a clear answer with citations.</p>
+          </div>
+          <div class="step reveal reveal-delay-2">
+            <span class="step__number">3</span>
+            <h3 class="step__title">Review, export, and share</h3>
+            <p class="step__desc">Copy answers into briefs, letters, or internal memos. Export as PDF or share a link with colleagues.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Use Cases ───────────────────────────────────── -->
+  <section id="use-cases">
+    <div class="container">
+      <p class="section-label">Use Cases</p>
+      <h2 class="section-title">Built for real legal workflows</h2>
+      <p class="section-sub">Ragbase adapts to the way your firm already operates.</p>
+
+      <div class="use-cases__grid">
+        <div class="use-case-card reveal">
+          <h3 class="use-case-card__title">Immigration Petitions</h3>
+          <p class="use-case-card__desc">Quickly pull together supporting evidence, country-condition reports, and regulatory references for H-1B, EB-2 NIW, O-1, or asylum cases. Ragbase surfaces the exact passages you need and links back to source documents.</p>
+        </div>
+        <div class="use-case-card reveal reveal-delay-1">
+          <h3 class="use-case-card__title">Client Intake &amp; Eligibility</h3>
+          <p class="use-case-card__desc">Ask "Is this client eligible for VAWA self-petition?" and get a grounded answer referencing your intake forms, policy manuals, and past case notes — so you spend less time on preliminary research.</p>
+        </div>
+        <div class="use-case-card reveal reveal-delay-2">
+          <h3 class="use-case-card__title">RFE Response Prep</h3>
+          <p class="use-case-card__desc">When USCIS issues a Request for Evidence, surface the specific policy passages and prior case references you need to draft a thorough, well-sourced response in hours, not days.</p>
+        </div>
+        <div class="use-case-card reveal reveal-delay-3">
+          <h3 class="use-case-card__title">Policy &amp; Checklist Compliance</h3>
+          <p class="use-case-card__desc">Verify your filings meet every requirement by cross-referencing internal checklists, USCIS policy manuals, and regulatory updates — all in one grounded query.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Pricing ─────────────────────────────────────── -->
+  <section id="pricing">
+    <div class="container">
+      <p class="section-label text-center">Pricing</p>
+      <h2 class="section-title text-center">Simple, transparent pricing</h2>
+      <p class="section-sub text-center mx-auto">Start small and scale as your firm grows. No hidden fees.</p>
+
+      <div class="pricing__grid">
+        <!-- Starter -->
+        <div class="price-card reveal">
+          <p class="price-card__name">Starter</p>
+          <div class="price-card__price">
+            <span class="price-card__amount">$99</span>
+            <span class="price-card__period">/month</span>
+          </div>
+          <ul class="price-card__features">
+            <li>Up to 500 documents indexed</li>
+            <li>3 user seats</li>
+            <li>Citation-backed answers</li>
+            <li>PDF &amp; DOCX upload</li>
+            <li>Email support</li>
+          </ul>
+          <a class="btn btn--outline btn--full" href="#consultation">Get Started</a>
+        </div>
+
+        <!-- Pro -->
+        <div class="price-card price-card--popular reveal reveal-delay-1">
+          <span class="price-card__badge">Most Popular</span>
+          <p class="price-card__name">Pro</p>
+          <div class="price-card__price">
+            <span class="price-card__amount">$249</span>
+            <span class="price-card__period">/month</span>
+          </div>
+          <ul class="price-card__features">
+            <li>Unlimited documents indexed</li>
+            <li>10 user seats</li>
+            <li>Advanced drafting &amp; export</li>
+            <li>Shared drive connectors</li>
+            <li>Priority support &amp; onboarding</li>
+          </ul>
+          <a class="btn btn--primary btn--full" href="#consultation">Get Started</a>
+        </div>
+      </div>
+
+      <p class="pricing__note">Pricing shown as placeholder. Contact us for custom enterprise plans.</p>
+    </div>
+  </section>
+
+  <!-- ─── Consultation Form ───────────────────────────── -->
+  <section id="consultation" class="consultation">
+    <div class="container">
+      <div class="consultation__grid">
+        <div class="consultation__text">
+          <p class="section-label">Get in Touch</p>
+          <h2 class="section-title">Talk to us</h2>
+          <p class="section-sub">We'll learn your workflow and recommend the best setup for your practice — no pressure, no obligation.</p>
+        </div>
+
+        <form class="form" action="https://formspree.io/f/placeholder" method="POST">
+          <div class="form__group">
+            <label for="formName">Name</label>
+            <input type="text" id="formName" name="name" placeholder="Jane Doe" required />
+          </div>
+          <div class="form__group">
+            <label for="formEmail">Email</label>
+            <input type="email" id="formEmail" name="email" placeholder="jane@example.com" required />
+          </div>
+          <div class="form__group">
+            <label for="formFirm">Firm Name</label>
+            <input type="text" id="formFirm" name="firm" placeholder="Doe & Partners LLP" />
+          </div>
+          <div class="form__group">
+            <label for="formMessage">Message</label>
+            <textarea id="formMessage" name="message" placeholder="Tell us about your current workflow…"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FAQ ─────────────────────────────────────────── -->
+  <section id="faq">
+    <div class="container">
+      <p class="section-label text-center">FAQ</p>
+      <h2 class="section-title text-center">Frequently asked questions</h2>
+
+      <div class="faq__list">
+        <details class="accordion__item reveal">
+          <summary class="accordion__trigger">What is RAG?</summary>
+          <div class="accordion__content">
+            RAG stands for Retrieval-Augmented Generation. It combines a search step — finding the most relevant passages in your own documents — with a language model that drafts a clear answer. Because answers are tied to real sources, the output is grounded and verifiable, not made up.
+          </div>
+        </details>
+
+        <details class="accordion__item reveal reveal-delay-1">
+          <summary class="accordion__trigger">Do answers include citations?</summary>
+          <div class="accordion__content">
+            Yes. Every answer links back to the specific document and page where the information was found. You can click through to verify the source before using it in your work.
+          </div>
+        </details>
+
+        <details class="accordion__item reveal reveal-delay-2">
+          <summary class="accordion__trigger">Can we limit which documents are used?</summary>
+          <div class="accordion__content">
+            Absolutely. You can organize documents into collections and restrict queries to specific folders, case files, or document types — so answers always come from the right context.
+          </div>
+        </details>
+
+        <details class="accordion__item reveal reveal-delay-3">
+          <summary class="accordion__trigger">How is our data handled?</summary>
+          <div class="accordion__content">
+            Your documents are encrypted at rest and in transit. We do not use your data to train models. Each workspace is fully isolated, and you retain ownership and control of all uploaded materials.
+          </div>
+        </details>
+
+        <details class="accordion__item reveal reveal-delay-4">
+          <summary class="accordion__trigger">How long does setup take?</summary>
+          <div class="accordion__content">
+            Most firms are up and running within a day. Upload your documents, and Ragbase begins indexing immediately. No engineering resources or complex integrations required.
+          </div>
+        </details>
+
+        <details class="accordion__item reveal">
+          <summary class="accordion__trigger">Does this replace attorneys?</summary>
+          <div class="accordion__content">
+            No. Ragbase is a research tool that helps attorneys work faster by surfacing relevant information from their own documents. All legal judgment and decision-making remain with the attorney.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ──────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="nav__logo" href="#top" aria-label="Ragbase home">
+            <span class="nav__logo-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+            </span>
+            <span>Ragbase</span>
+          </a>
+          <p class="footer__tagline">Grounded answers for legal teams.</p>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Product</p>
+          <ul class="footer__links">
+            <li><a href="#product">Benefits</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#use-cases">Use Cases</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Company</p>
+          <ul class="footer__links">
+            <li><a href="#consultation">Contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Ragbase. All rights reserved.</p>
+        <p>This is a demo site. No real legal advice is provided.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
