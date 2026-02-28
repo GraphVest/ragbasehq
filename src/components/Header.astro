@@ -1,0 +1,29 @@
+---
+// Header.astro
+---
+
+<nav class="nav" id="navbar">
+  <div class="container nav__inner">
+    <a class="nav__logo" href="/#top" aria-label="RAGBase home">
+      <span class="nav__logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+      </span>
+      <span>RAGBase</span>
+    </a>
+
+    <!-- checkbox-based mobile toggle — no JS needed -->
+    <input type="checkbox" id="navCheck" class="nav__check" aria-label="Toggle menu" />
+    <label for="navCheck" class="nav__hamburger">
+      <span></span><span></span><span></span>
+    </label>
+
+    <ul class="nav__links" id="navLinks" role="list">
+      <li><a href="/#product">Product</a></li>
+      <li><a href="/#how-it-works">How it Works</a></li>
+      <li><a href="/#use-cases">Use Cases</a></li>
+      <li><a href="/#pricing">Pricing</a></li>
+      <li><a href="/#faq">FAQ</a></li>
+      <li><a class="btn btn--primary btn--sm" href="/#consultation">Schedule a Consultation</a></li>
+    </ul>
+  </div>
+</nav>

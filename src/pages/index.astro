@@ -1,44 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ragbase — Reliable, Citation-Backed Answers from Your Firm's Documents</title>
-  <meta name="description" content="Ragbase connects to your case files, policies, and templates — then surfaces precise answers with source references, so your team spends less time searching and more time advising." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="index.css" />
-</head>
-<body id="top">
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
 
-  <!-- ─── Navigation ──────────────────────────────────── -->
-  <nav class="nav" id="navbar">
-    <div class="container nav__inner">
-      <a class="nav__logo" href="#top" aria-label="Ragbase home">
-        <span class="nav__logo-icon">
-          <svg viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
-        </span>
-        <span>Ragbase</span>
-      </a>
-
-      <!-- checkbox-based mobile toggle — no JS needed -->
-      <input type="checkbox" id="navCheck" class="nav__check" aria-label="Toggle menu" />
-      <label for="navCheck" class="nav__hamburger">
-        <span></span><span></span><span></span>
-      </label>
-
-      <ul class="nav__links" id="navLinks" role="list">
-        <li><a href="#product">Product</a></li>
-        <li><a href="#how-it-works">How it Works</a></li>
-        <li><a href="#use-cases">Use Cases</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a class="btn btn--primary btn--sm" href="#consultation">Schedule a Consultation</a></li>
-      </ul>
-    </div>
-  </nav>
-
+<BaseLayout>
   <!-- ─── Hero ────────────────────────────────────────── -->
   <section class="hero">
     <div class="container">
@@ -50,7 +14,7 @@
             Reliable, citation&#8209;backed answers from<br /><em>your firm's documents</em>
           </h1>
           <p class="hero__sub">
-            Ragbase connects to your case files, policies, and templates — then surfaces precise answers with source references, so your team spends less time searching and more time advising.
+            RAGBase connects to your case files, policies, and templates — then surfaces precise answers with source references, so your team spends less time searching and more time advising.
           </p>
           <div class="hero__actions">
             <a class="btn btn--primary" href="#consultation">Schedule a Consultation</a>
@@ -105,7 +69,7 @@
   <section id="product">
     <div class="container">
       <p class="section-label">Product</p>
-      <h2 class="section-title">Why firms choose Ragbase</h2>
+      <h2 class="section-title">Why firms choose RAGBase</h2>
       <p class="section-sub">Every answer is grounded in your documents — never fabricated, always verifiable.</p>
 
       <div class="benefits__grid">
@@ -144,12 +108,12 @@
           <div class="step reveal">
             <span class="step__number">1</span>
             <h3 class="step__title">Upload or connect your documents</h3>
-            <p class="step__desc">Drag-and-drop PDFs, DOCX files, or connect a shared drive. Ragbase indexes everything securely.</p>
+            <p class="step__desc">Drag-and-drop PDFs, DOCX files, or connect a shared drive. RAGBase indexes everything securely.</p>
           </div>
           <div class="step reveal reveal-delay-1">
             <span class="step__number">2</span>
             <h3 class="step__title">Ask questions &amp; get grounded answers</h3>
-            <p class="step__desc">Type a question in plain language. Ragbase retrieves the most relevant passages and generates a clear answer with citations.</p>
+            <p class="step__desc">Type a question in plain language. RAGBase retrieves the most relevant passages and generates a clear answer with citations.</p>
           </div>
           <div class="step reveal reveal-delay-2">
             <span class="step__number">3</span>
@@ -166,12 +130,12 @@
     <div class="container">
       <p class="section-label">Use Cases</p>
       <h2 class="section-title">Built for real legal workflows</h2>
-      <p class="section-sub">Ragbase adapts to the way your firm already operates.</p>
+      <p class="section-sub">RAGBase adapts to the way your firm already operates.</p>
 
       <div class="use-cases__grid">
         <div class="use-case-card reveal">
           <h3 class="use-case-card__title">Immigration Petitions</h3>
-          <p class="use-case-card__desc">Quickly pull together supporting evidence, country-condition reports, and regulatory references for H-1B, EB-2 NIW, O-1, or asylum cases. Ragbase surfaces the exact passages you need and links back to source documents.</p>
+          <p class="use-case-card__desc">Quickly pull together supporting evidence, country-condition reports, and regulatory references for H-1B, EB-2 NIW, O-1, or asylum cases. RAGBase surfaces the exact passages you need and links back to source documents.</p>
         </div>
         <div class="use-case-card reveal reveal-delay-1">
           <h3 class="use-case-card__title">Client Intake &amp; Eligibility</h3>
@@ -308,61 +272,17 @@
         <details class="accordion__item reveal reveal-delay-4">
           <summary class="accordion__trigger">How long does setup take?</summary>
           <div class="accordion__content">
-            Most firms are up and running within a day. Upload your documents, and Ragbase begins indexing immediately. No engineering resources or complex integrations required.
+            Most firms are up and running within a day. Upload your documents, and RAGBase begins indexing immediately. No engineering resources or complex integrations required.
           </div>
         </details>
 
         <details class="accordion__item reveal">
           <summary class="accordion__trigger">Does this replace attorneys?</summary>
           <div class="accordion__content">
-            No. Ragbase is a research tool that helps attorneys work faster by surfacing relevant information from their own documents. All legal judgment and decision-making remain with the attorney.
+            No. RAGBase is a research tool that helps attorneys work faster by surfacing relevant information from their own documents. All legal judgment and decision-making remain with the attorney.
           </div>
         </details>
       </div>
     </div>
   </section>
-
-  <!-- ─── Footer ──────────────────────────────────────── -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <a class="nav__logo" href="#top" aria-label="Ragbase home">
-            <span class="nav__logo-icon">
-              <svg viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
-            </span>
-            <span>Ragbase</span>
-          </a>
-          <p class="footer__tagline">Grounded answers for legal teams.</p>
-        </div>
-
-        <div>
-          <p class="footer__col-title">Product</p>
-          <ul class="footer__links">
-            <li><a href="#product">Benefits</a></li>
-            <li><a href="#how-it-works">How It Works</a></li>
-            <li><a href="#use-cases">Use Cases</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="footer__col-title">Company</p>
-          <ul class="footer__links">
-            <li><a href="#consultation">Contact</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer__bottom">
-        <p>&copy; 2026 Ragbase. All rights reserved.</p>
-        <p>This is a demo site. No real legal advice is provided.</p>
-      </div>
-    </div>
-  </footer>
-
-</body>
-</html>
+</BaseLayout>

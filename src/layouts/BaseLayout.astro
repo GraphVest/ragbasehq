@@ -1,0 +1,27 @@
+---
+import SEO from './SEO.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = "RAGBase — Reliable, Citation-Backed Answers from Your Firm's Documents", description = "RAGBase connects to your case files, policies, and templates — then surfaces precise answers with source references, so your team spends less time searching and more time advising." } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <SEO title={title} description={description} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
