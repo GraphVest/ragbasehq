@@ -1,0 +1,132 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <!-- ─── Pricing Header ──────────────────────────────────────── -->
+  <section class="hero" style="padding-bottom: 2rem;">
+    <div class="container text-center">
+      <h1 class="hero__title">
+        Transparent Pricing for <br /><em>Enterprise AI</em>
+      </h1>
+      <p class="hero__sub mx-auto" style="max-width: 600px;">
+        Choose the RAGBase package that aligns with your operational scale and security requirements. 
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── Detailed Pricing Table ──────────────────────────────── -->
+  <section style="padding-top: 2rem; padding-bottom: 6rem;">
+    <div class="container">
+      <div class="table-responsive" style="overflow-x: auto;">
+        <table class="pricing-matrix" style="width: 100%; border-collapse: collapse; min-width: 800px;">
+          <thead>
+            <tr>
+              <th style="padding: 1.5rem; text-align: left; background: var(--clr-primary); color: white; border: 1px solid var(--clr-border);">Features &amp; Pricing</th>
+              <th style="padding: 1.5rem; text-align: left; background: var(--clr-surface); border: 1px solid var(--clr-border);">
+                <span style="font-size: 1.25rem; font-weight: bold;">Starter</span>
+              </th>
+              <th style="padding: 1.5rem; text-align: left; background: var(--clr-surface); border: 2px solid var(--clr-primary);">
+                <span class="badge" style="background: var(--clr-primary); color: white; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.75rem; vertical-align: middle; margin-bottom: 0.5rem; display: inline-block;">Recommended</span><br>
+                <span style="font-size: 1.25rem; font-weight: bold;">Professional</span>
+              </th>
+              <th style="padding: 1.5rem; text-align: left; background: var(--clr-surface); border: 1px solid var(--clr-border);">
+                <span style="font-size: 1.25rem; font-weight: bold;">Enterprise</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border); font-weight: bold;">Annual License</td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border); font-weight: bold;">$3,000</td>
+              <td style="padding: 1.25rem 1.5rem; border-top: 1px solid var(--clr-border); border-bottom: 1px solid var(--clr-border); border-left: 2px solid var(--clr-primary); border-right: 2px solid var(--clr-primary); font-weight: bold;">$9,000</td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border); font-weight: bold;">Custom</td>
+            </tr>
+            <tr>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border); font-weight: bold;">One-time Setup Fee</td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border);">$1,500</td>
+              <td style="padding: 1.25rem 1.5rem; border-top: 1px solid var(--clr-border); border-bottom: 1px solid var(--clr-border); border-left: 2px solid var(--clr-primary); border-right: 2px solid var(--clr-primary);">$1,500</td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border);">Custom</td>
+            </tr>
+            <tr>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border); font-weight: bold;">Monthly Searches</td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border);">500 searches/month</td>
+              <td style="padding: 1.25rem 1.5rem; border-top: 1px solid var(--clr-border); border-bottom: 1px solid var(--clr-border); border-left: 2px solid var(--clr-primary); border-right: 2px solid var(--clr-primary);">5,000 searches/month</td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border);">Unlimited</td>
+            </tr>
+            <tr>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border); font-weight: bold;">Analytical Depth</td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border);">Standard Research</td>
+              <td style="padding: 1.25rem 1.5rem; border-top: 1px solid var(--clr-border); border-bottom: 1px solid var(--clr-border); border-left: 2px solid var(--clr-primary); border-right: 2px solid var(--clr-primary); font-weight: bold;">Complex Strategic Analysis</td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border);">Bespoke Enterprise Workflows</td>
+            </tr>
+            <tr>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border); font-weight: bold;">Data Privacy</td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border);">PII Redaction<br><span style="font-size: 0.85em; color: var(--clr-text-sub);">(Basic Policy)</span></td>
+              <td style="padding: 1.25rem 1.5rem; border-top: 1px solid var(--clr-border); border-bottom: 1px solid var(--clr-border); border-left: 2px solid var(--clr-primary); border-right: 2px solid var(--clr-primary);">Strict Compliance<br><span style="font-size: 0.85em; color: var(--clr-text-sub);">(HIPAA/GDPR Grade)</span></td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border);">Air-gapped Compliance<br><span style="font-size: 0.85em; color: var(--clr-text-sub);">(Military Grade)</span></td>
+            </tr>
+            <tr>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border); font-weight: bold;">Search Capabilities</td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border);">Keyword & Semantic Search</td>
+              <td style="padding: 1.25rem 1.5rem; border-top: 1px solid var(--clr-border); border-bottom: 1px solid var(--clr-border); border-left: 2px solid var(--clr-primary); border-right: 2px solid var(--clr-primary); font-weight: bold;">Intent-based Deep Routing</td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border);">Cross-Silo Database Querying</td>
+            </tr>
+            <tr>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border); font-weight: bold;">Quality Assurance</td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border);">Standard Generation</td>
+              <td style="padding: 1.25rem 1.5rem; border-top: 1px solid var(--clr-border); border-bottom: 1px solid var(--clr-border); border-left: 2px solid var(--clr-primary); border-right: 2px solid var(--clr-primary); font-weight: bold;">Automated Fact-Checker<br><span style="font-size: 0.85em; color: var(--clr-text-sub);">(Zero Hallucination)</span></td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border);">Multi-Tiered Peer Review Simulation</td>
+            </tr>
+            <tr>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border); font-weight: bold;">Output Formatting</td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border);">Basic Summaries</td>
+              <td style="padding: 1.25rem 1.5rem; border-top: 1px solid var(--clr-border); border-bottom: 1px solid var(--clr-border); border-left: 2px solid var(--clr-primary); border-right: 2px solid var(--clr-primary); font-weight: bold;">Audit-Ready Memos w/ Citations</td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border);">Automated Document Drafting</td>
+            </tr>
+            <tr>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border); font-weight: bold;">Knowledge Domains</td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border);">1 Domain (e.g., Family Law)</td>
+              <td style="padding: 1.25rem 1.5rem; border-top: 1px solid var(--clr-border); border-bottom: 1px solid var(--clr-border); border-left: 2px solid var(--clr-primary); border-right: 2px solid var(--clr-primary);">Multi-domain support</td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border);">Custom jurisdiction packages</td>
+            </tr>
+            <tr>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border); font-weight: bold;">Data Sources</td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border);">Static Internal Data</td>
+              <td style="padding: 1.25rem 1.5rem; border-top: 1px solid var(--clr-border); border-bottom: 1px solid var(--clr-border); border-left: 2px solid var(--clr-primary); border-right: 2px solid var(--clr-primary);">Continuous Web-Scraping Pipeline</td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border);">ERP/CRM Custom Integration</td>
+            </tr>
+            <tr>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border); font-weight: bold;">Deployment</td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border);">Shared Cloud</td>
+              <td style="padding: 1.25rem 1.5rem; border-top: 1px solid var(--clr-border); border-bottom: 1px solid var(--clr-border); border-left: 2px solid var(--clr-primary); border-right: 2px solid var(--clr-primary);">Shared Cloud</td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border); font-weight: bold;">On-premise / Private Cloud</td>
+            </tr>
+            <tr>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border); font-weight: bold;">Support &amp; SLA</td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border);">Standard email support</td>
+              <td style="padding: 1.25rem 1.5rem; border-bottom: 2px solid var(--clr-primary); border-left: 2px solid var(--clr-primary); border-right: 2px solid var(--clr-primary);">Priority Support</td>
+              <td style="padding: 1.25rem 1.5rem; border: 1px solid var(--clr-border);">24/7 Support &amp; 99.9% SLA</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Action Area -->
+      <div style="margin-top: 4rem; text-align: center; background: var(--clr-surface); padding: 3rem; border-radius: var(--r-xl); border: 1px solid var(--clr-border); box-shadow: var(--shadow-sm);">
+        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Ready to upgrade your organization's compliance and research?</h3>
+        <p style="color: var(--clr-text-sub); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+          Contact our specialized sales team to design the Custom Multi-Agent setup tailored specifically to your exact needs.
+        </p>
+        <a class="btn btn--primary" href="/#consultation">Contact Sales to Start</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Base overriding for table rows logic and hover states */
+  .pricing-matrix tbody tr:hover td {
+    background-color: rgba(79, 70, 229, 0.03); /* Subtle primary color highlight */
+  }
+</style>

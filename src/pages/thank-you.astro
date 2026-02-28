@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <section class="hero" style="padding-top: 8rem; padding-bottom: 8rem; min-height: 70vh; display: flex; align-items: center;">
+    <div class="container text-center">
+      <div style="background: var(--clr-surface); padding: 4rem 2rem; border-radius: var(--r-xl); border: 1px solid var(--clr-border); box-shadow: var(--shadow-sm); max-width: 600px; margin: 0 auto;">
+        
+        <div style="width: 64px; height: 64px; background: rgba(16, 185, 129, 0.1); color: #10b981; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+          <svg style="width: 32px; height: 32px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+        </div>
+
+        <h1 class="hero__title" style="font-size: 2.5rem; margin-bottom: 1rem;">Thank you!</h1>
+        <p class="hero__sub mx-auto" style="margin-bottom: 2rem; font-size: 1.1rem; color: var(--clr-text-sub);">
+          Thank you for booking a free consultation. We are currently experiencing a high volume of requests from enterprise clients, but our team will reach out to you shortly.
+        </p>
+        
+        <a class="btn btn--primary" href="/">Return to Homepage</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
