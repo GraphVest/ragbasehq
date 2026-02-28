@@ -253,6 +253,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
 
         <form class="form" id="consultationForm">
+          <!-- The Access Key is securely provided via environment variables -->
+          <input type="hidden" name="access_key" value={import.meta.env.PUBLIC_WEB3FORMS_ACCESS_KEY} />
+
           <div class="form__group">
             <label for="formName">Name</label>
             <input type="text" id="formName" name="name" placeholder="Jane Doe" required />
@@ -306,13 +309,41 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             return;
           }
 
-          // Simulate API call / loading state
+          // Send data to Web3Forms API via AJAX
           submitBtn.textContent = 'Submitting...';
           submitBtn.disabled = true;
 
-          setTimeout(() => {
-            window.location.href = '/thank-you';
-          }, 1500);
+          const formData = new FormData(form);
+          const object = Object.fromEntries(formData);
+          // Web3Forms also requires the access_key to be part of the object
+          // It is already included as a hidden input, so Object.fromEntries(formData) captures it.
+          const json = JSON.stringify(object);
+
+          fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: json
+          })
+          .then(async (response) => {
+            let res = await response.json();
+            if (response.status === 200) {
+              window.location.href = '/thank-you';
+            } else {
+              console.error(res);
+              alert(res.message || 'An error occurred while submitting the form.');
+              submitBtn.textContent = 'Book Free Consultation';
+              submitBtn.disabled = false;
+            }
+          })
+          .catch(error => {
+            console.error(error);
+            alert('Connection error! Please try again later.');
+            submitBtn.textContent = 'Book Free Consultation';
+            submitBtn.disabled = false;
+          });
         });
       }
     });
